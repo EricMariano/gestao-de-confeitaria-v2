@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CRM Confeitaria
 
-## Getting Started
+Gestão de Confeitaria é uma aplicação web dedicada à gestão de confeitaria, permitindo a visualização de dashboards, gerenciamento de pedidos, ingredientes e receitas com uma interface moderna e responsiva. Por ora apenas o front (Next).
 
-First, run the development server:
+## Tabela de Conteúdos
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Visão Geral](#visão-geral)
+- [Recursos](#recursos)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação e Execução](#instalação-e-execução)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Visão Geral
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+O CRM Confeitaria foi desenvolvido para facilitar a administração de uma confeitaria, reunindo informações importantes em um dashboard intuitivo e oferecendo módulos específicos para pedidos, ingredientes e receitas.  
+A aplicação utiliza React para a interface do usuário, Recharts para a visualização de dados e Tailwind CSS em conjunto com Shadcn UI para componentes estilizados.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Recursos
 
-## Learn More
+- **Dashboard Dinâmico:** Visualização de dados com gráficos responsivos (ex: vendas mensais).
+- **Gestão de Pedidos:** Monitoramento dos pedidos realizados.
+- **Controle de Ingredientes:** Listagem e gerenciamento dos ingredientes utilizados.
+- **Cadastro e Gestão de Receitas:** Criação e gerenciamento de receitas.
+- **EM DESENVOLVIMENTO** 
 
-To learn more about Next.js, take a look at the following resources:
+## Tecnologias Utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework:** Next.js (React)
+- **Visualização de Dados:** Recharts (v2.15.1) + Shadcn UI 
+- **Estilização:** Tailwind CSS (v4.0.12)
+- **Biblioteca de Componentes:**  Shadcn UI e Aceternity UI
+- **Build Tool:** Next.js (com suporte a SSR/SSG)
+- **Linting:** ESLint com plugins específicos para React e hooks
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Para o futuro:
+- **Backend:** Java ou Typescript
+- **Banco de Dados:** Postgresql
+- **Pagamento:** Stripe
+- **Bot WhatsApp:** Python - Atendimento/Suporte Automatizado
 
-## Deploy on Vercel
+## Instalação e Execução
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Pré-requisitos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Node.js (v16 ou superior)
+- Yarn ou npm
+
+### Passos para Instalar e Executar
+
+1. **Clone o repositório**
+   ```bash
+    git clone <URL_DO_REPOSITORIO>
+    cd gestao-de-confeitaria-v2
+2. **Instale as dependências**
+    ```bash
+    npm install
+    # ou, se estiver utilizando Yarn:
+    # yarn install
+3. **Inicie o servidor de desenvolvimento**
+    ```bash
+    npm run dev
+    # ou, com Yarn:
+    # yarn dev
