@@ -36,17 +36,17 @@ const data = {
   navMain: [
     {
       title: "Dashboard",
-      url: "#",
+      url: "/dashboard",
       icon: IconChartBar,
     },
     {
       title: "Lista de Receitas",
-      url: "#",
+      url: "/recipes",
       icon: IconFolder,
     },
     {
       title: "Lista de Ingredientes",
-      url: "#",
+      url: "/ingredients",
       icon: IconListDetails,
     },
   ],
