@@ -26,7 +26,7 @@ export function SidebarMenuMain({
 
   return (
     <SidebarGroup>
-      <SidebarGroupLabel>Plataforma</SidebarGroupLabel>
+      <SidebarGroupLabel className="text-primary">Plataforma</SidebarGroupLabel>
       <SidebarGroupContent className="flex flex-col">
         <SidebarMenu>
           {items.map((item) => {

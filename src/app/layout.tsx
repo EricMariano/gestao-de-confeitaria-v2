@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Gestão de Confeitaria",
-  description: " ",
+  title: "Cakefy",
+  description: "Gestão de Confeitaria",
 };
 
 export default function RootLayout({

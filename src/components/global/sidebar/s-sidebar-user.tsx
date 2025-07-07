@@ -40,6 +40,7 @@ export function NavUser({
 }) {
   const { isMobile } = useSidebar()
   const name = user.firstName +" " + user.secondName;
+  const nameInitials = user.firstName[0]+user.secondName[0];
 
   return (
     <SidebarMenu>
@@ -48,11 +49,11 @@ export function NavUser({
           <DropdownMenuTrigger asChild>
             <SidebarMenuButton
               size="lg"
-              className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground"
+              className="data-[state=open]:bg-sidebar-accent data-[state=open]:text-sidebar-accent-foreground hover:text-primary hover:cursor-pointer"
             >
-              <Avatar className="h-8 w-8 rounded-lg grayscale">
+              <Avatar className="h-8 w-8 rounded-lg">
                 <AvatarImage src={user.avatar} alt={name} />
-                <AvatarFallback className="rounded-lg">{user.firstName[0]+user.secondName[0]}</AvatarFallback>
+                <AvatarFallback className="rounded-lg text-primary">{nameInitials}</AvatarFallback>
               </Avatar>
               <div className="grid flex-1 text-left text-sm leading-tight">
                 <span className="truncate font-medium">{name}</span>
@@ -73,7 +74,7 @@ export function NavUser({
               <div className="flex items-center gap-2 px-1 py-1.5 text-left text-sm">
                 <Avatar className="h-8 w-8 rounded-lg">
                   <AvatarImage src={user.avatar} alt={name} />
-                  <AvatarFallback className="rounded-lg">{user.firstName[0]+user.secondName[0]}</AvatarFallback>
+                  <AvatarFallback className="rounded-lg text-primary">{nameInitials}</AvatarFallback>
                 </Avatar>
                 <div className="grid flex-1 text-left text-sm leading-tight">
                   <span className="truncate font-medium">{name}</span>

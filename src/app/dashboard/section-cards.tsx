@@ -47,12 +47,12 @@ export function SectionCards() {
       {cardsData.map((card, idx) => (
         <Card className="@container/card" key={idx}>
           <CardHeader>
-            <CardDescription>{card.description}</CardDescription>
-            <CardTitle className="text-2xl font-semibold tabular-nums @[250px]/card:text-3xl">
+            <CardDescription className="text-primary">{card.description}</CardDescription>
+            <CardTitle className="text-2xl font-semibold text-primary tabular-nums @[250px]/card:text-3xl">
               {card.title}
             </CardTitle>
             <CardAction>
-              <Badge variant="outline">
+              <Badge variant="outline" className="">
                 {card.badge.icon}
                 {card.badge.text}
               </Badge>

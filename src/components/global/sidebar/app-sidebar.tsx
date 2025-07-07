@@ -53,30 +53,13 @@ const data = {
   navSecondary: [
     {
       title: "Ajustes",
-      url: "#",
+      url: "/settings",
       icon: IconSettings,
     },
     {
       title: "Ajuda",
-      url: "#",
+      url: "/help",
       icon: IconHelp,
-    },
-  ],
-  documents: [
-    {
-      name: "Data Library",
-      url: "#",
-      icon: IconDatabase,
-    },
-    {
-      name: "Reports",
-      url: "#",
-      icon: IconReport,
-    },
-    {
-      name: "Word Assistant",
-      url: "#",
-      icon: IconFileWord,
     },
   ],
 }
@@ -89,13 +72,12 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       </SidebarHeader>
       <SidebarContent>
         <SidebarMenuMain items={data.navMain} />
-        {/* <NavDocuments items={data.documents} /> */}
         <SidebarMenuSecondary items={data.navSecondary} className="mt-auto" />
       </SidebarContent>
       <SidebarFooter>
-        <p className="text-[12px]">Desenvolvido por 
-          <span className="hover:underline hover:bg-gradient-to-r hover:from-[#050F2C] hover:via-blue-600 hover:to-blue-500 hover:text-transparent hover:bg-clip-text"> 
-            <Link href="https://github.com/EricMariano" about="_blank"> @EricMariano</Link>
+        <p className="text-[12px]">Desenvolvido por {""} 
+          <span className="hover:bg-gradient-to-r hover:from-[#590D22] hover:via-[#FF4D6D] hover:to-[#590D22] hover:text-transparent hover:bg-clip-text"> 
+            <Link href="https://github.com/EricMariano" target="_blank">@EricMariano</Link>
           </span>
         </p>
       </SidebarFooter>
