@@ -13,7 +13,6 @@ import {
   IconSettings,
 } from "@tabler/icons-react"
 
-import { NavDocuments } from "@/components/global/sidebar/s-side-documents"
 import { SidebarMenuMain } from "@/components/global/sidebar/s-sidebar-main"
 import { SidebarMenuSecondary } from "@/components/global/sidebar/s-sidebar-secondary"
 import { NavUser } from "@/components/global/sidebar/s-sidebar-user"
@@ -28,9 +27,9 @@ import Link from "next/link"
 
 const data = {
   user: {
-    firstName: "Joelma",
+    firstName: "Eric",
     secondName: "Mariano",
-    email: "m@example.com",
+    email: "ericbfmariano@gmail.com",
     avatar: "/avatars/shadcn.jpg",
   },
   navMain: [
