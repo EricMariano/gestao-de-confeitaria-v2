@@ -54,7 +54,7 @@ const mockIngredients: Ingredient[] = [
       cost: 12.50,
       supplier: "",
       lastUpdated: new Date("2024-01-13"),
-      status: "active"
+      status: "inactive"
     },
     {
       id: "5",
@@ -79,11 +79,11 @@ function formatDate(date: Date) {
 function getStatusBadge(status: Ingredient['status']) {
     switch (status) {
       case 'active':
-        return <Badge variant="default">Ativo</Badge>
+        return <Badge variant="active">Ativo</Badge>
       case 'inactive':
-        return <Badge variant="secondary">Inativo</Badge>
+        return <Badge variant="destructive">Inativo</Badge>
       case 'low_stock':
-        return <Badge variant="destructive">Estoque Baixo</Badge>
+        return <Badge variant="low_stock">Estoque Baixo</Badge>
       default:
         return <Badge variant="outline">Desconhecido</Badge>
     }
